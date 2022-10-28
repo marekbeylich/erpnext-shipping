@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "creation": "2022-10-28 15:14:59.028546",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "api_user",
+  "api_password",
+  "information"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "api_user",
+   "fieldtype": "Data",
+   "label": "API User",
+   "read_only_depends_on": "eval:doc.enabled == 0"
+  },
+  {
+   "fieldname": "api_password",
+   "fieldtype": "Password",
+   "label": "API Password",
+   "read_only_depends_on": "eval:doc.enabled == 0"
+  },
+  {
+   "fieldname": "information",
+   "fieldtype": "HTML",
+   "options": "<div><span class=\"text-medium text-muted\">For steps to generate the API ID, click <a href=\"https://www.canadapost-postescanada.ca/information/app/drc/home?execution=e1s1\" target=\"_blank\">here</a></span></div>"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-10-28 16:49:39.638069",
+ "modified_by": "Administrator",
+ "module": "ERPNext Shipping",
+ "name": "Canada Post",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
