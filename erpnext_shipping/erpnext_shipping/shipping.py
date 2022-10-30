@@ -12,6 +12,7 @@ from erpnext_shipping.erpnext_shipping.utils import get_address, get_contact, ma
 from erpnext_shipping.erpnext_shipping.doctype.letmeship.letmeship import LETMESHIP_PROVIDER, LetMeShipUtils
 from erpnext_shipping.erpnext_shipping.doctype.packlink.packlink import PACKLINK_PROVIDER, PackLinkUtils
 from erpnext_shipping.erpnext_shipping.doctype.sendcloud.sendcloud import SENDCLOUD_PROVIDER, SendCloudUtils
+from erpnext_shipping.erpnext_shipping.doctype.canadapost.canadapost import CANADAPOST_PROVIDER, CanadaPostUtils
 
 @frappe.whitelist()
 def fetch_shipping_rates(pickup_from_type, delivery_to_type, pickup_address_name, delivery_address_name,
@@ -22,6 +23,7 @@ def fetch_shipping_rates(pickup_from_type, delivery_to_type, pickup_address_name
 	letmeship_enabled = frappe.db.get_single_value('LetMeShip','enabled')
 	packlink_enabled = frappe.db.get_single_value('Packlink','enabled')
 	sendcloud_enabled = frappe.db.get_single_value('SendCloud','enabled')
+	CanadaPost_enabled = frappe.db.get_single_value('CanadaPost','enabled')
 	pickup_address = get_address(pickup_address_name)
 	delivery_address = get_address(delivery_address_name)
 

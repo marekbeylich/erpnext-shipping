@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\erpnext_shipping",
+    "\\erpnext_shipping\\erpnext_shipping",
+    "\\erpnext_shipping\\erpnext_shipping\\doctype",
+    "\\erpnext_shipping\\erpnext_shipping\\doctype\\letmeship"
   ],
-  "SelectedNode": "\\C:\\Users\\TheXephoxify\\Source\\Repos\\marekbeylich\\erpnext-shipping",
+  "SelectedNode": "\\erpnext_shipping\\erpnext_shipping\\doctype\\letmeship\\letmeship.py",
   "PreviewInSolutionExplorer": false
 }
