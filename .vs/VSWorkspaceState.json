@@ -4,8 +4,12 @@
     "\\erpnext_shipping",
     "\\erpnext_shipping\\erpnext_shipping",
     "\\erpnext_shipping\\erpnext_shipping\\doctype",
-    "\\erpnext_shipping\\erpnext_shipping\\doctype\\letmeship"
+    "\\erpnext_shipping\\erpnext_shipping\\doctype\\fedex",
+    "\\erpnext_shipping\\erpnext_shipping\\doctype\\letmeship",
+    "\\erpnext_shipping\\erpnext_shipping\\doctype\\packlink",
+    "\\erpnext_shipping\\erpnext_shipping\\doctype\\sendcloud",
+    "\\erpnext_shipping\\erpnext_shipping\\patches"
   ],
-  "SelectedNode": "\\erpnext_shipping\\erpnext_shipping\\doctype\\letmeship\\letmeship.py",
+  "SelectedNode": "\\erpnext_shipping\\erpnext_shipping\\doctype\\fedex\\fedex.py",
   "PreviewInSolutionExplorer": false
 }
